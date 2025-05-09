@@ -18,6 +18,9 @@ header {
       height: 80px; 
       padding: 0 20px;
       justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
     }
   
   .nav-links {
@@ -118,11 +121,13 @@ header {
 .card{
     width:200px; 
     margin:10px; 
-    height: 450px; 
+    height: 440px; 
     box-shadow: 0 0 2px ; 
     padding: 10px; 
     text-align: center; 
     background-color: rgb(148, 101, 40);
+    margin-top: 80px;
+    transition: 0.3s ease;
 }
 
 .product-container{
@@ -130,9 +135,16 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    padding-top: 30px;
 }
 .card img{
-    width: 100%;
+    width: 90%;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+
 }
 .product {
     justify-content: center;
@@ -152,7 +164,16 @@ header {
 button{
     cursor: pointer;
     margin:10px;
+    padding: 8px 16px;   
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease;
 }
+.card button:hover {
+  background-color:rgb(204, 38, 38);
+  transform: 0.2s;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}    
 
 .logo img{
   max-height: 60px;
